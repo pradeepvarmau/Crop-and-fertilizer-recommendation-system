@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .header {
+          padding: 10px;
+          text-align: center;
+          color: rgb(9, 9, 9);
+          font-size: 10px;
+         }
+
+    </style>
+</head>
+
+<body>    
+    <div class="header">
+        <h1>FERTILIZER RECOMMENDATION</h1>
+    </div>
+    <!-- form section  -->
+    <div class="container p-4">
+        <form class="text-uppercase font-weight-bold" method="POST" action="/submit2">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Temperature</label>
+                <input type="float" class="form-control" name="temperature" id="temperature" placeholder="Enter the value">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Humidity</label>
+                <input type="float" class="form-control" name="humidity" id="humidity" placeholder="Enter the value">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">soil moisture</label>
+                <input type="float" class="form-control" name="soilmoisture" id="soilmoisture" placeholder="Enter the value">
+            </div>
+            
+            <div class="form-group">
+                
+                <label for="exampleInputEmail1">Soil Type </label>
+                <select class="form-control form-control-sm" name="soiltype" id="soiltype">
+                    <option>Select</option>
+                    <option>Sandy</option>
+                    <option>Loamy</option>
+                    <option>Black</option>
+                    <option>Red</option>
+                    <option>Clayey</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Nitrogen</label>
+                <input type="number" class="form-control" name="nitrogen" id="Nitrogen" placeholder="Enter the value">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Pottasium</label>
+                <input type="number" class="form-control" name="pottasium" id="Pottasium" placeholder="Enter the value">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Phosphorous</label>
+                <input type="number" class="form-control" name="phosphorous" id="Phosphorous" placeholder="Enter the value">
+            </div>
+
+        
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Crop want to grow</label>
+                <select class="form-control form-control-sm" name="cropname" id="crop">
+                    <option>Select</option>
+                    <option>Paddy</option>
+                    <option>Maize</option>
+                    <option>Wheat</option>
+                    <option>Barley</option>
+                    <option>Ground Nuts</option>
+                    <option>Millets</option>
+                    <option>Oil seeds</option>
+                    <option>Pulses</option>
+                    <option>Sugarcane</option>
+                    <option>Cotton</option>
+                    <option>Tobacco</option>
+                </select>
+            </div>
+
+
+            <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-dark bg-dark btn-lg">Predict</button>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <footer class="py-3 my-4">
+            <hr>
+            <p class="text-center text-body-secondary">&copy; 2024 SMART FARM</p>
+        </footer>
+    </div>
+
+   </body>
+
+</html>
